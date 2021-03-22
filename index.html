@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Poppins, sans-serif;
+
+    }
+
+    .sec {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        padding: 100px;
+        background: url('bg.jpg') no-repeat center center fixed;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 100px;
+    }
+
+    .header ul {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header ul li {
+        list-style: none;
+
+    }
+
+    .header ul li a {
+        display: inline-block;
+        color: #fff;
+        font-weight: 400;
+        margin-left: 40px;
+        text-decoration: none;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+        color: white;
+        padding: 10px;
+    }
+
+    .content-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .content {
+        flex: 50%
+    }
+
+    .content-header {
+        color: white;
+    }
+
+    .title {
+        font-size: 4em;
+        font-weight: bolder;
+    }
+
+    .form {
+        color: white;
+        flex: 20%;
+
+    }
+
+    .form .form-title {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        font-weight: bold;
+
+    }
+
+    .form input {
+        padding: 10px 0;
+        box-shadow: none;
+        outline: none;
+        width: 100%;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid white;
+        color: white;
+    }
+
+    .form .input-box {
+        padding: 0 0 20px 0;
+
+    }
+
+    .form textarea {
+        padding: 10px 0;
+        box-shadow: none;
+        outline: none;
+        width: 100%;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid white;
+        min-height: 150px;
+        color: white;
+
+    }
+
+    .form button {
+        background: #4a7dc9;
+        padding: 5px;
+        color: #232323;
+        border-radius: 8px;
+        box-shadow: none;
+        border: none;
+        font-weight: bold;
+
+    }
+
+    .form input::placeholder {
+        color: #b1b1b1;
+    }
+
+    .form textarea::placeholder {
+        color: #b1b1b1;
+
+    }
+
+</style>
+<body>
+
+<div class="sec">
+    <div class="content-box">
+
+        <div class="content content-home">
+            <div class="content-header">
+                <div class="sub-title">
+                    Your site will be so cool like
+                </div>
+                <div class="title">BRANDNAME</div>
+                <div class="sub-title">
+                    Development and support<br>
+                    Stylish and adapted sites<br>
+                    Modern web applications<br>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <div class="form-title">Make me lauding page!</div>
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" name="name">
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Email" name="email">
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Phone (optionally)" name="phone">
+            </div>
+            <div class="input-box">
+                <textarea name="text" placeholder="Write your message here"></textarea>
+            </div>
+            <div class="input-box">
+                <button>SEND</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="header">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Deal</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</div>
+
+<div class="footer">
+    ©2020-2021 All rights reserved
+</div>
+
+<script>
+
+</script>
+
+</body>
+</html>
