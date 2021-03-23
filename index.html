@@ -32,7 +32,7 @@
         position: fixed;
         height: 100%;
         width: 100%;
-        filter: blur(2px);
+        filter: blur(3px);
         transition: 2s;
 
     }
@@ -40,8 +40,10 @@
     .bg video {
         width: 100%;
         height: 100%;
-        filter: opacity(0.05);
+        filter: opacity(0.01);
         object-fit: fill;
+
+
     }
 
     .header {
@@ -69,8 +71,8 @@
         display: inline-block;
         color: #fff;
         font-weight: 400;
-        margin-left: 40px;
         text-decoration: none;
+
     }
 
     .footer {
@@ -180,12 +182,99 @@
         height: 100px;
         width: 100px;
         cursor: pointer;
+        margin-top: 70px;
 
     }
 
     .header ul li .active {
         color: white;
         font-weight: bolder;
+        border-bottom: 2px solid white;
+
+    }
+
+    .portfolio {
+
+    }
+
+    .portfolio-item {
+        display: flex;
+        margin-top: 30px;
+
+    }
+
+    .portfolio-item-text {
+        font-size: 1em;
+
+    }
+
+    .portfolio-item-logo {
+        margin-right: 10px;
+        padding: 30px;
+        background: rgba(189, 84, 84, 0.48);
+        height: 80px;
+        width: 80px;
+
+    }
+
+    .player {
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        bottom: 50px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .player-icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        border: 2px solid white;
+        margin-top: 1.2em;
+        position: relative;
+
+    }
+
+    .player-icon:hover {
+        padding: 10px;
+
+    }
+
+    .player-icon-start {
+        width: 0;
+        height: 0;
+        border-top: 14px solid transparent;
+        border-left: 28px solid white;
+        border-bottom: 14px solid transparent;
+        display: inline-block;
+        top: 24px;
+        left: 28px;
+        position: absolute;
+
+    }
+
+    .player-icon-stop {
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        top: 25px;
+        left: 26px;
+        position: absolute;
+        background: white;
+
+    }
+
+    .player-title {
+        color: white;
+        font-weight: 800;
+        padding: 10px;
+        text-align: center;
+        border-radius: 100px;
+        line-height: 1.2em;
+        border: 1px solid white;
 
     }
 
@@ -233,25 +322,40 @@
         </div>
         <div data-content="portfolio" class="content portfolio">
             <div class="content-header">
-                <div class="title">ABOUT US</div>
-                <div class="text">
-                    <b>Ukrainian company specializing in the development of web products founded in 2020 (Kharkiv, 171
-                        Gagarina St.)</b><br><br>
-                    Online presence is critical to success.<br>
-                    This can be the key to the success of a small or solid business, a brilliant or ridiculous idea,
-                    humble or daring creativity.<br>
-                    Our goal is to connect you and the digital world based on your needs in the shortest possible time
-                    using<br>
-                    modern and high-performance technologies
+                <div class="title">PORTFOLIO</div>
+                <div class="portfolio">
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-logo"></div>
+                        <div class="portfolio-item-text">
+                            Ukrainian company specializing in the development of web products<br>
+                            founded in 2020 (Kharkiv, 171 Gagarina St.)
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-logo"></div>
+                        <div class="portfolio-item-text">
+                            Ukrainian company specializing in the development of web products<br>
+                            founded in 2020 (Kharkiv, 171 Gagarina St.)
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-logo"></div>
+                        <div class="portfolio-item-text">
+                            Ukrainian company specializing in the development of web products<br>
+                            founded in 2020 (Kharkiv, 171 Gagarina St.)
+                        </div>
+                    </div>
 
                 </div>
             </div>
         </div>
         <div data-content="deal" class="content deal">
             <div class="content-header">
-                <div class="title">ABOUT US</div>
+                <div class="title">Why do you need lauding ?</div>
+                <div class="sub-title">Because:</div>
                 <div class="text">
-                    <b>Ukrainian company specializing in the development of web products founded in 2020 (Kharkiv, 171
+                    <b>Ukrainian company specializing in the development of web products<br> founded in 2020 (Kharkiv,
+                        171
                         Gagarina St.)</b><br><br>
                     Online presence is critical to success.<br>
                     This can be the key to the success of a small or solid business, a brilliant or ridiculous idea,
@@ -266,15 +370,16 @@
         <div data-content="contact" class="content contact">
             <div class="content-header">
                 <div class="title">CONTACT</div>
+                <div class="sub-title">Sub Title</div>
                 <div class="text">
                     We operate in an industry built on trust.<br>
                     This can only be achieved through communication and experienced support<br>
-                    If you have a questions can ask them us in the right form or <br>
-                    through bellow contact data<br>
+                    If you have a questions can ask them us in the form or <br>
+                    through bellow contact data<br><br>
 
-                    <b>TELEGRAM: @brandname</b><br>
-                    <b>E-MAIL: email@gmail.com</b><br>
-                    <b>MOBILE: +380966329967</b><br>
+                    <b>TELEGRAM:</b> @brandname<br>
+                    <b>E-MAIL:</b> email@gmail.com<br>
+                    <b>MOBILE:</b> +380966329967<br>
 
                 </div>
             </div>
@@ -300,15 +405,24 @@
     </div>
     <div class="header">
         <ul>
-            <li><a href="#" data-content="deal">Deal</a></li>
+            <li><a href="#" data-content="deal">Why!?</a></li>
             <li><a href="#" data-content="contact">Contact</a></li>
             <li><a href="#" data-content="home" class="logo active"></a></li>
-            <li><a href="#" style="color: black" data-content="portfolio">Portfolio</a></li>
-            <li><a href="#" style="color: black" data-content="about">About</a></li>
+            <li><a href="#" style="color: black; border-color: black" data-content="portfolio">Portfolio</a></li>
+            <li><a href="#" style="color: black; border-color: black" data-content="about">About</a></li>
         </ul>
     </div>
-</div>
 
+</div>
+<div class="player">
+    <div class="player-title">an<br>th<br>em</div>
+    <div class="player-icon">
+        <div class="player-icon-start" onclick="play()">
+            <audio id="audio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+
+        </div>
+    </div>
+</div>
 
 <div class="footer">
     ©2020-2021 All rights reserved
@@ -317,6 +431,32 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script>
+    function play() {
+        let audio = $("#audio");
+        let audioElement = document.getElementById("audio");
+
+        if (audio.hasClass('player-icon-stop') === false) {
+            audioElement.pause();
+
+            let icon = $('.player-icon-start');
+
+            icon.addClass('player-icon-stop');
+            icon.removeClass('player-icon-start');
+
+            audioElement.pause();
+
+        } else {
+            let icon = $('.player-icon-stop');
+            console.log(audio.hasClass('player-icon-stop'));
+
+            icon.addClass('player-icon-start');
+            icon.removeClass('player-icon-stop');
+
+            audioElement.play();
+
+        }
+
+    }
 
     function replaceContent(content) {
         let contents = $('.content-box .content');
@@ -329,14 +469,15 @@
                     $(this).css('display', 'none');
 
                 } else {
-                    $(this).fadeIn('fast');
 
-                    $('.bg').css('background', '#' + Math.floor(100000 + Math.random() * 900000));
+                    $('.bg').css('filter', 'blur(100px)');
 
                     setTimeout(function () {
-                        $('.bg').css('background', '');
-                    }, 1000);
+                        $('.bg').css('filter', 'blur(3px)');
 
+                    }, 150);
+
+                    $(this).fadeIn('slow');
                 }
 
             });
@@ -346,7 +487,11 @@
     }
 
     $('.header > ul > li > a').on('click', function () {
+        $('.active').removeClass('active');
+
         replaceContent($(this).data('content'));
+
+        $(this).addClass('active');
 
     });
 
@@ -355,8 +500,9 @@
     $('.bg').css('width', '58%');
 
     setInterval(function () {
-        $('.bg video').css({'filter': 'blur(0px)'});
-        setTimeout(() => $('.bg video').css({'filter': 'opacity(0.05)'}), 700);
+        let bgVideo = $('.bg video');
+        bgVideo.css({'filter': 'blur(0px)'});
+        setTimeout(() => bgVideo.css({'filter': 'opacity(0.01)'}), 700);
 
     }, 5000);
 
