@@ -21,11 +21,27 @@
         height: 100%;
         min-height: 100vh;
         padding: 100px;
-        background: url('bg.jpg') no-repeat center center fixed;
-        background-size: cover;
         display: flex;
         align-items: center;
 
+    }
+
+    .bg {
+        background: url('bg.jpg') no-repeat center center fixed;
+        background-size: cover;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        filter: blur(2px);
+        transition: 2s;
+
+    }
+
+    .bg video {
+        width: 100%;
+        height: 100%;
+        filter: opacity(0.05);
+        object-fit: fill;
     }
 
     .header {
@@ -34,12 +50,14 @@
         left: 0;
         width: 100%;
         padding: 20px 100px;
+
     }
 
     .header ul {
         position: relative;
         display: flex;
         justify-content: space-around;
+        align-items: center;
     }
 
     .header ul li {
@@ -73,7 +91,14 @@
 
     }
 
+    .sub-title {
+        font-weight: bold;
+        color: #b1b1b1;
+        font-size: 2em;
+    }
+
     .content {
+        margin-right: 70px;
         flex: 50%
     }
 
@@ -83,11 +108,11 @@
 
     .title {
         font-size: 4em;
-        font-weight: bolder;
+        font-weight: 800;
     }
 
     .form {
-        color: white;
+        color: #404040;
         flex: 20%;
 
     }
@@ -106,8 +131,8 @@
         width: 100%;
         background: transparent;
         border: none;
-        border-bottom: 2px solid white;
-        color: white;
+        border-bottom: 1px solid black;
+        color: black;
     }
 
     .form .input-box {
@@ -122,16 +147,16 @@
         width: 100%;
         background: transparent;
         border: none;
-        border-bottom: 2px solid white;
+        border-bottom: 1px solid black;
         min-height: 150px;
-        color: white;
+        color: black;
 
     }
 
     .form button {
-        background: #4a7dc9;
-        padding: 5px;
-        color: #232323;
+        background: #404040;
+        padding: 10px;
+        color: #ffffff;
         border-radius: 8px;
         box-shadow: none;
         border: none;
@@ -140,30 +165,117 @@
     }
 
     .form input::placeholder {
-        color: #b1b1b1;
+        color: #6f6f6f;
     }
 
+
     .form textarea::placeholder {
-        color: #b1b1b1;
+        color: #6f6f6f;
+
+    }
+
+    .header ul li .logo {
+        background: url('image/logo/logo_transparent.png');
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+        cursor: pointer;
+
+    }
+
+    .header ul li .active {
+        color: white;
+        font-weight: bolder;
 
     }
 
 </style>
 <body>
 
+<div class="bg">
+    <video autoplay muted loop>
+        <source src="bg.mp4" type="video/mp4">
+    </video>
+</div>
+
 <div class="sec">
     <div class="content-box">
-
-        <div class="content content-home">
+        <div data-content="home" class="content home">
             <div class="content-header">
                 <div class="sub-title">
                     Your site will be so cool like
                 </div>
                 <div class="title">BRANDNAME</div>
-                <div class="sub-title">
+                <div class="text">
                     Development and support<br>
                     Stylish and adapted sites<br>
                     Modern web applications<br>
+                </div>
+            </div>
+        </div>
+        <div data-content="about" class="content about">
+            <div class="content-header">
+                <div class="title">ABOUT US</div>
+                <div class="text">
+                    <b>Ukrainian company specializing in the development of web products<br>
+                        founded in 2020 (Kharkiv, 171 Gagarina St.)</b><br><br>
+                    Online presence is critical to success.<br>
+                    This can be the key to the success of <br>
+                    a small or solid business,<br>
+                    a brilliant or ridiculous idea,<br>
+                    humble or daring creativity.<br><br>
+                    <b>Our goal is to connect <br>you and the digital world based on your needs<br> in the shortest
+                        possible time
+                        using modern <br>and high-performance technologies</b>
+
+                </div>
+            </div>
+        </div>
+        <div data-content="portfolio" class="content portfolio">
+            <div class="content-header">
+                <div class="title">ABOUT US</div>
+                <div class="text">
+                    <b>Ukrainian company specializing in the development of web products founded in 2020 (Kharkiv, 171
+                        Gagarina St.)</b><br><br>
+                    Online presence is critical to success.<br>
+                    This can be the key to the success of a small or solid business, a brilliant or ridiculous idea,
+                    humble or daring creativity.<br>
+                    Our goal is to connect you and the digital world based on your needs in the shortest possible time
+                    using<br>
+                    modern and high-performance technologies
+
+                </div>
+            </div>
+        </div>
+        <div data-content="deal" class="content deal">
+            <div class="content-header">
+                <div class="title">ABOUT US</div>
+                <div class="text">
+                    <b>Ukrainian company specializing in the development of web products founded in 2020 (Kharkiv, 171
+                        Gagarina St.)</b><br><br>
+                    Online presence is critical to success.<br>
+                    This can be the key to the success of a small or solid business, a brilliant or ridiculous idea,
+                    humble or daring creativity.<br>
+                    Our goal is to connect you and the digital world based on your needs in the shortest possible time
+                    using<br>
+                    modern and high-performance technologies
+
+                </div>
+            </div>
+        </div>
+        <div data-content="contact" class="content contact">
+            <div class="content-header">
+                <div class="title">CONTACT</div>
+                <div class="text">
+                    We operate in an industry built on trust.<br>
+                    This can only be achieved through communication and experienced support<br>
+                    If you have a questions can ask them us in the right form or <br>
+                    through bellow contact data<br>
+
+                    <b>TELEGRAM: @brandname</b><br>
+                    <b>E-MAIL: email@gmail.com</b><br>
+                    <b>MOBILE: +380966329967</b><br>
+
                 </div>
             </div>
         </div>
@@ -186,23 +298,67 @@
             </div>
         </div>
     </div>
+    <div class="header">
+        <ul>
+            <li><a href="#" data-content="deal">Deal</a></li>
+            <li><a href="#" data-content="contact">Contact</a></li>
+            <li><a href="#" data-content="home" class="logo active"></a></li>
+            <li><a href="#" style="color: black" data-content="portfolio">Portfolio</a></li>
+            <li><a href="#" style="color: black" data-content="about">About</a></li>
+        </ul>
+    </div>
 </div>
 
-<div class="header">
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Deal</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">About</a></li>
-    </ul>
-</div>
 
 <div class="footer">
     ©2020-2021 All rights reserved
 </div>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <script>
+
+    function replaceContent(content) {
+        let contents = $('.content-box .content');
+
+        showNecessaryText(contents);
+
+        function showNecessaryText(elements) {
+            elements.each(function () {
+                if ($(this).data('content') !== content) {
+                    $(this).css('display', 'none');
+
+                } else {
+                    $(this).fadeIn('fast');
+
+                    $('.bg').css('background', '#' + Math.floor(100000 + Math.random() * 900000));
+
+                    setTimeout(function () {
+                        $('.bg').css('background', '');
+                    }, 1000);
+
+                }
+
+            });
+
+        }
+
+    }
+
+    $('.header > ul > li > a').on('click', function () {
+        replaceContent($(this).data('content'));
+
+    });
+
+    replaceContent('home');
+
+    $('.bg').css('width', '58%');
+
+    setInterval(function () {
+        $('.bg video').css({'filter': 'blur(0px)'});
+        setTimeout(() => $('.bg video').css({'filter': 'opacity(0.05)'}), 700);
+
+    }, 5000);
 
 </script>
 
