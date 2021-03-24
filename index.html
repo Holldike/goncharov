@@ -217,66 +217,105 @@
 
     }
 
-    .player {
-        align-items: center;
-        width: 100%;
-        position: absolute;
-        bottom: 50px;
-        margin: auto;
+    .service-item {
         display: flex;
-        justify-content: center;
-        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        margin-top: 20px;
     }
 
-    .player-icon {
-        width: 80px;
-        height: 80px;
-        border-radius: 100%;
-        border: 2px solid white;
-        margin-top: 1.2em;
-        position: relative;
+    .service-list {
+        margin-top: 20px;
 
     }
 
-    .player-icon:hover {
-        padding: 10px;
+    .service-item-icon {
+        margin-right: 10px;
 
     }
 
-    .player-icon-start {
-        width: 0;
-        height: 0;
-        border-top: 14px solid transparent;
-        border-left: 28px solid white;
-        border-bottom: 14px solid transparent;
-        display: inline-block;
-        top: 24px;
-        left: 28px;
-        position: absolute;
+    .service-item-icon img {
+        width: 50px;
+        height: 50px;
+        filter: brightness(0) invert(1);
 
     }
 
-    .player-icon-stop {
-        width: 25px;
-        height: 25px;
-        display: inline-block;
-        top: 25px;
-        left: 26px;
-        position: absolute;
-        background: white;
+    .service-item-text-title {
+        font-weight: bold;
 
     }
 
-    .player-title {
-        color: white;
-        font-weight: 800;
-        padding: 10px;
-        text-align: center;
-        border-radius: 100px;
-        line-height: 1.2em;
-        border: 1px solid white;
+    .service-item-text-body {
+        font-size: 0.8em;
 
     }
+
+    .service-list-title {
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    /*.player {*/
+    /*    align-items: center;*/
+    /*    width: 100%;*/
+    /*    position: absolute;*/
+    /*    bottom: 50px;*/
+    /*    margin: auto;*/
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*    flex-direction: column;*/
+    /*}*/
+
+    /*.player-icon {*/
+    /*    width: 80px;*/
+    /*    height: 80px;*/
+    /*    border-radius: 100%;*/
+    /*    border: 2px solid white;*/
+    /*    margin-top: 1.2em;*/
+    /*    position: relative;*/
+
+    /*}*/
+
+    /*.player-icon:hover {*/
+    /*    padding: 10px;*/
+
+    /*}*/
+
+    /*.player-icon-start {*/
+    /*    width: 0;*/
+    /*    height: 0;*/
+    /*    border-top: 14px solid transparent;*/
+    /*    border-left: 28px solid white;*/
+    /*    border-bottom: 14px solid transparent;*/
+    /*    display: inline-block;*/
+    /*    top: 24px;*/
+    /*    left: 28px;*/
+    /*    position: absolute;*/
+
+    /*}*/
+
+    /*.player-icon-stop {*/
+    /*    width: 25px;*/
+    /*    height: 25px;*/
+    /*    display: inline-block;*/
+    /*    top: 25px;*/
+    /*    left: 26px;*/
+    /*    position: absolute;*/
+    /*    background: white;*/
+
+    /*}*/
+
+    /*.player-title {*/
+    /*    color: white;*/
+    /*    font-weight: 800;*/
+    /*    padding: 10px;*/
+    /*    text-align: center;*/
+    /*    border-radius: 100px;*/
+    /*    line-height: 1.2em;*/
+    /*    border: 1px solid white;*/
+
+    /*}*/
 
 </style>
 <body>
@@ -296,15 +335,15 @@
                 </div>
                 <div class="title">BRANDNAME</div>
                 <div class="text">
-                    Development and support<br>
-                    Stylish and adapted sites<br>
-                    Modern web applications<br>
+                    <b>Development, support, promotion<br>
+                        Stylish and adaptable to all devices<br>
+                        landing pages</b>
                 </div>
             </div>
         </div>
         <div data-content="about" class="content about">
             <div class="content-header">
-                <div class="title">ABOUT US</div>
+                <div class="title">ABOUT</div>
                 <div class="text">
                     <b>Ukrainian company specializing in the development of web products<br>
                         founded in 2020 (Kharkiv, 171 Gagarina St.)</b><br><br>
@@ -323,6 +362,11 @@
         <div data-content="portfolio" class="content portfolio">
             <div class="content-header">
                 <div class="title">PORTFOLIO</div>
+                <div class="sub-title">We turn ideas into great results</div>
+                <div class="text">
+                    We will help you use your business more effectively and interact with customers <br>
+                    by turning complex tasks into simple and understandable solutions
+                </div>
                 <div class="portfolio">
                     <div class="portfolio-item">
                         <div class="portfolio-item-logo"></div>
@@ -349,37 +393,101 @@
                 </div>
             </div>
         </div>
-        <div data-content="deal" class="content deal">
+        <div data-content="service" class="content service">
             <div class="content-header">
-                <div class="title">Why do you need lauding ?</div>
-                <div class="sub-title">Because:</div>
+                <div class="title">SERVICES</div>
+                <div class="sub-title">
+                    High quality<br>
+                </div>
                 <div class="text">
-                    <b>Ukrainian company specializing in the development of web products<br> founded in 2020 (Kharkiv,
-                        171
-                        Gagarina St.)</b><br><br>
-                    Online presence is critical to success.<br>
-                    This can be the key to the success of a small or solid business, a brilliant or ridiculous idea,
-                    humble or daring creativity.<br>
-                    Our goal is to connect you and the digital world based on your needs in the shortest possible time
-                    using<br>
-                    modern and high-performance technologies
+                    We provide a full cycle of
+                        Development, support, promotion and launch<br>
+                        Landing sites in the shortest possible time<br>
 
+                    <div class="service-list">
+                        <div class="service-list-title">The cycle is:</div>
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <img src="image/service-icon/goal.png">
+                            </div>
+                            <div class="service-item-text">
+                                <div class="service-item-text-title">
+                                    Discussing your preferences, determining the ultimate goal
+                                </div>
+                                <div class="service-item-text-body">
+                                    Finding tasks that are critical for your particular field of activity
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <img src="image/service-icon/design.png">
+                            </div>
+                            <div class="service-item-text">
+                                <div class="service-item-text-title">
+                                    Design
+                                </div>
+                                <div class="service-item-text-body">
+                                    You can be sure that your site will be attractive, user-friendly and <br>
+                                    exactly the way you imagined it (or even better)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <img src="image/service-icon/programming.png">
+                            </div>
+                            <div class="service-item-text">
+                                <div class="service-item-text-title">
+                                    Programming
+                                </div>
+                                <div class="service-item-text-body">
+                                    Clean code
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <img src="image/service-icon/launch.png">
+                            </div>
+                            <div class="service-item-text">
+                                <div class="service-item-text-title">
+                                    Launch
+                                </div>
+                                <div class="service-item-text-body">
+                                    At this stage, you have at your disposal a completely finished website with your
+                                    domain name
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <img src="image/service-icon/promotion.png">
+                            </div>
+                            <div class="service-item-text">
+                                <div class="service-item-text-title">
+                                    Promotion
+                                </div>
+                                <div class="service-item-text-body">
+                                    Marketing of website promotion, its products and services using digital channels
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div data-content="contact" class="content contact">
             <div class="content-header">
                 <div class="title">CONTACT</div>
-                <div class="sub-title">Sub Title</div>
+                <div class="sub-title">Time to connect</div>
                 <div class="text">
-                    We operate in an industry built on trust.<br>
-                    This can only be achieved through communication and experienced support<br>
                     If you have a questions can ask them us in the form or <br>
                     through bellow contact data<br><br>
 
-                    <b>TELEGRAM:</b> @brandname<br>
-                    <b>E-MAIL:</b> email@gmail.com<br>
-                    <b>MOBILE:</b> +380966329967<br>
+                    <b>telegram:</b> @brandname<br>
+                    <b>e-mail:</b> email@gmail.com<br>
+                    <b>mobile:</b> +380966329967<br>
 
                 </div>
             </div>
@@ -405,24 +513,24 @@
     </div>
     <div class="header">
         <ul>
-            <li><a href="#" data-content="deal">Why!?</a></li>
+            <li><a href="#" data-content="service">Service</a></li>
             <li><a href="#" data-content="contact">Contact</a></li>
             <li><a href="#" data-content="home" class="logo active"></a></li>
             <li><a href="#" style="color: black; border-color: black" data-content="portfolio">Portfolio</a></li>
             <li><a href="#" style="color: black; border-color: black" data-content="about">About</a></li>
         </ul>
     </div>
-
 </div>
-<div class="player">
-    <div class="player-title">an<br>th<br>em</div>
-    <div class="player-icon">
-        <div class="player-icon-start" onclick="play()">
-            <audio id="audio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
 
-        </div>
-    </div>
-</div>
+<!--<div class="player">-->
+<!--    <div class="player-title">an<br>th<br>em</div>-->
+<!--    <div class="player-icon">-->
+<!--        <div class="player-icon-start" onclick="play()">-->
+<!--            <audio id="audio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>-->
+
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 
 <div class="footer">
     ©2020-2021 All rights reserved
