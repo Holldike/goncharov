@@ -134,14 +134,7 @@ $(document).ready(function () {
                 },
                 method: 'POST'
             }).done(function () {
-                $('.form-success-message').addClass('form-success-message-active');
-                $('body').css('overflow', 'hidden');
-
-                $('.form-success-message .button').on('click', function () {
-                    $('.form-success-message').removeClass('form-success-message-active');
-                    $('body').css('overflow', 'visible');
-
-                });
+                alert('We have received your message and will contact you as soon as possible using the specified contacts in the form');
 
                 fullName.clearVal();
                 email.clearVal();
