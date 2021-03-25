@@ -42,7 +42,7 @@ function replaceContent(content) {
                 setTimeout(function () {
                     $('.bg').css('filter', 'blur(3px)');
 
-                }, 150);
+                }, 200);
 
                 $(this).fadeIn('slow');
             }
@@ -55,10 +55,10 @@ function replaceContent(content) {
 
 $('.header > ul > li > a').on('click', function () {
     $('.active').removeClass('active');
+    $(this).addClass('active');
 
     replaceContent($(this).data('content'));
 
-    $(this).addClass('active');
 
 });
 
