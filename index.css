@@ -94,7 +94,7 @@
 }
 
 .content {
-    margin-right: 70px;
+    margin-right: 115px;
     flex: 50%
 }
 
@@ -246,7 +246,7 @@
 
 }
 
-.service-list-title {
+.caption {
     font-size: 2em;
     font-weight: bold;
 }
